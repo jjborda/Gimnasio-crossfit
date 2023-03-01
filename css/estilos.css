@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 600px;
+}
+
+/*HEADER gral*/
+body {
+    margin: 10px;
+    font-size: 1.2rem;
+    min-height: 600px;
+}
+
+.encabezado {
+    grid-area: header;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    grid-area: "header";
+}
+.navbar-brand{
+    background-color: orange;
+}
+.navbar-toggler{
+    background-color: rgb(0, 132, 255);
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.navegador li {
+    width: 120px;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    border: solid;
+    border-color: orange;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 3px;
+    border: 3px;
+    border-style: double;
+}
+
+.navegador li:hover {
+    background-color: white;
+}
+
+.hamburguesa li {
+    color: white;
+    background-color: orange;
+    border: solid;
+    border-color: orange;
+    border-radius: 3px;
+    margin: 15px;
+    padding: 3px;
+    border: 3px;
+    border-style: double;
+}
+
+.encabezado img {
+    margin: 5px;
+    width: 200px;
+}
+
+
+/*SECCION PRINCIPAL (index)*/
+.seccion {
+    grid-area: seccion;
+    width: 95%;
+    background-color: orange;
+    margin: 30px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion ul li {
+    margin: 30px;
+}
+.seccion ul img {
+    width: 400px;
+    height: 200px;
+}
+
+h1 {
+    color: white;
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90px;
+    margin: 30px;
+}
+
+h2 {
+    margin: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.frente img {
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+}
+
+p {
+    text-align: center;
+    width: 95%;
+    padding: 30px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/*FOOTER gral*/
+
+.finfooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.ins {
+    width: 5px;
+}
+
+.whats {
+    width: 5px;
+}
+
+.finfooter img {
+    margin: 30px;
+    width: 40px;
+}
+
+.finfooter img:hover {
+    margin: 20px;
+    width: 50px;
+}
+
+.copyright {
+    margin: 30px;
+    font-size: 15px;
+}
+
+.pre-fin {
+    grid-area: footer;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* ACTIVIDADES*/
+
+.lista-actividad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.seccion p {
+    padding: 30px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*HORARIOS*/
+.logo {
+    margin: 5px;
+    width: 200px;
+}
+
+.img-hora {
+    width: 90%;
+    margin: 30px;
+
+}
+
+.horario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.rusa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.rusa img{
+    width: 90%;
+}
+
+.grid-contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "seccion"
+        "footer";
+}
+
+.menu ul{
+    display: none;
+}
+
+/*FORMULARIOS*/
+
+.formulario{
+    margin: 5px;
+}
+
+/*NOSOTROS*/
+.profes {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    margin: 10px;
+    border: solid rgb(0, 132, 255);
+}
+.card img{
+    width: auto;
+    height: 380px;
+}
+.card-body{
+   background-color: rgb(0, 132, 255);
+}
+.card-title{
+    color: orangered;
+}
+.card-body ul{
+    
+    color: orangered;
+}
+
+/*TABLET*/
+@media (min-width: 600px) {
+    html {
+        height: 768px;
+    }
+
+    body {
+        min-height: 768px;
+    }
+
+    .encabezado {
+        display: flex;
+        margin: 15px;
+    }
+
+    /*MENU DE NAVEGACION*/
+    .menu {
+        grid-area: menu;
+        background-color: white;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu li {
+        color: white;
+        background-color: orange;
+        border: solid;
+        border-color: orange;
+        border-radius: 3px;
+        margin: 15px;
+        padding: 3px;
+        border: 3px;
+        border-style: double;
+    }
+
+    .menu li:hover {
+        background-color: white;
+    }
+
+    .navegador {
+        display: none;
+    }
+
+    /*ACTIVIDAD*/
+    .lista-actividad {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .fin {
+        flex-direction: column;
+    }
+
+    .grid-contenedor {
+        grid-template-areas:
+            "header  header"
+            "menu menu"
+            "seccion seccion"
+            "footer  footer";
+    }
+
+    .img-hora {
+        margin: 10px;
+    }
+
+    .detalle {
+        display: inline-flex;
+    }
+
+    /*HORARIO*/
+    .fin {
+        grid-area: footer;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+
+}
+
+/*DESKTOP (INDEX)*/
+@media (min-width: 768px) {
+    html {
+        height: 1200px;
+    }
+
+    body {
+        min-height: 1200px;
+    }
+
+    .frente {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    /*ACTIVIDAD*/
+    .lista-actividad {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .lista-actividad p {
+        font-size: 15px;
+    }
+
+    /*HORARIO*/
+    .img-hora {
+        margin: 10px;
+    }
+
+    .detalle {
+        display: inline-flex;
+    }
+}
