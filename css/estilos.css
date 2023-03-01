@@ -67,7 +67,7 @@
 
 /*SECCION PRINCIPAL (index)*/
 .seccion {
-    grid-area: seccion;
+    grid-area: "seccion";
     width: 95%;
     background-color: orange;
     right: 60px;
@@ -89,10 +89,11 @@ h1 {
     text-align: start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
-    margin: 30px;
+    margin: 80px;
 }
 
 h2 {
+    text-align: center;
     margin: 30px;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -148,7 +149,7 @@ p {
 }
 
 .pre-fin {
-    grid-area: footer;
+    grid-area: "footer";
     background-color: white;
     display: flex;
     justify-content: space-around;
