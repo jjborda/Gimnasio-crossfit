@@ -256,11 +256,6 @@ p {
 
 /*TABLET*/
 @media (min-width: 768px) {
-
-    body {
-        min-height: 768px;
-    }
-
     .encabezado {
         display: flex;
         margin: 15px;
@@ -302,8 +297,20 @@ p {
 
     /*ACTIVIDAD*/
     .lista-actividad {
-        display: flex;
+        flex-direction: column;
         justify-content: space-around;
+        text-align: start;
+    }
+    .act-cont{
+        display: flex;
+    }
+    p {
+        font-size: 15px;
+    }
+
+    .seccion p {
+        display: flex;
+        text-align: start;
     }
 
     .fin {
@@ -329,6 +336,7 @@ p {
         align-content: center;
         align-items: center;
     }
+
     .grid-contenedor {
         grid-template-areas:
             "header  header"
@@ -342,12 +350,10 @@ p {
 /*DESKTOP (INDEX)*/
 @media (min-width: 1200px) {
 
-    body {
-        min-height: 1200px;
+    .seccion {
+        flex-direction: row;
     }
-.seccion{
-    flex-direction: row;
-}
+
     .frente {
         display: flex;
         justify-content: space-around;
@@ -359,13 +365,13 @@ p {
 
     /*ACTIVIDAD*/
     .lista-actividad {
-        flex-direction: row;
         justify-content: space-around;
     }
 
     .lista-actividad p {
         font-size: 15px;
     }
+
 
     /*HORARIO*/
     .img-hora {
@@ -374,5 +380,13 @@ p {
 
     .detalle {
         display: inline-flex;
+    }
+
+    .grid-contenedor {
+        grid-template-areas:
+            "header  header header"
+            "menu menu menu"
+            "seccion seccion"
+            "footer  footer footer";
     }
 }
