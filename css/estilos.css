@@ -169,8 +169,9 @@ p {
     width: 90%;
 }
 .seccion p {
+    width: 90%;
     padding: 30px;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: oblique;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
