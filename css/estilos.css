@@ -67,7 +67,7 @@
 
 /*SECCION PRINCIPAL (index)*/
 .seccion {
-    grid-area: "seccion";
+    grid-area: seccion;
     width: 95%;
     background-color: orange;
     right: 60px;
@@ -149,12 +149,14 @@ p {
 }
 
 .pre-fin {
-    grid-area: "footer";
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-content: center;
     align-items: center;
+}
+.fin{
+    grid-area: "footer";
 }
 
 
