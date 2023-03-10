@@ -21,7 +21,7 @@
 
 <body class="grid-contenedor">
     <header class="encabezado column">
-        <img class="logo column" src="../imagenes/Ola bco.png" alt="logo de la ola">
+        <img class="logo column" src="../imagenes/Ola_bco-removebg-preview.png" alt="logo de la ola">
         <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,10 +32,13 @@
                 <div class="collapse navbar-collapse hamburguesa" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio </a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./horarios.html">Horarios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./inscripcion.html"> Inscripcion</a>
@@ -49,62 +52,53 @@
                                 Conocenos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="https://instagram.com/laolabox?igshid=NTdlMDg3MTY="
-                                        target="_blank">Instagram</a></li>
+                                <li><a class="dropdown-item ins"
+                                        href="https://instagram.com/laolabox?igshid=NTdlMDg3MTY=" target="_blank"><img
+                                            class="icono" src="../imagenes/instagram.png" alt="Logo de instagram">
+                                        Instagram</a></li>
                                 <li><a class="dropdown-item whats" href="
-                                    https://wa.me/+541168867670?text=Hola%20soy%20Kevin%20Ricon%20coach%20de%20la%20Ola%20Box!%20En%20que%20puedo%20ayudarte...
-                                    " target="_blank"> Whatsapp</a></li>
+                                https://wa.me/+541168867670?text=Hola%20soy%20Kevin%20Ricon%20coach%20de%20la%20Ola%20Box!%20En%20que%20puedo%20ayudarte...
+                                " target="_blank"><img class="icono" src="../imagenes/whatsapp.png"
+                                            alt="Logo de instagram">Whatsapp</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <main class="menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio </a> </li>
-                    <li><a href="./actividades.html">Activides</a></li>
-                    <li><a href="./horarios.html"> Horarios</a></li>
-                    <li><a href="./nuestra_sede.html">Nosotros</a></li>
-                </ul>
-            </nav>
-            <div class="img-contenedor">
-            </div>
-        </main>
     </header>
-    <section class="seccion  container-fluid">
+    <section class="seccion-formulario  container-fluid">
         <article class="contenedor row">
             <h1 class="titulo row">Formulario de inscripcion</h1>
             <div class="formulario  container-fluid">
                 <div class="col">
-                    <label for="nombre">Nombre</label>
+                    <label class="indicacion" for="nombre">Nombre</label>
                     <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="First name">
                 </div>
                 <div class="col">
-                    <label for="nombre">Apellido</label>
+                    <label class="indicacion" for="nombre">Apellido</label>
                     <input type="text" class="form-control" placeholder="Ingrese su apellido" aria-label="Last name">
                 </div>
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="Correo electronico" class="form-label">Email</label>
+                        <label class="indicacion" for="Correo electronico" class="form-label">Email</label>
                         <input type="email" class="form-control" placeholder="Ingrese su correo electronico"
                             id="inputEmail4">
                     </div>
                     <div class="col-md-6">
-                        <label for="Localidad/Partido" class="form-label">Ciudad</label>
+                        <label class="indicacion" for="Localidad/Partido" class="form-label">Ciudad</label>
                         <input type="text" class="form-control" placeholder="Ingrese su localidad" id="inputCity">
                     </div>
                     <div class="col-12">
-                        <label for="Calle" class="form-label">Calle</label>
+                        <label class="indicacion" for="Calle" class="form-label">Calle</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su calle">
                     </div>
                     <div class="col-12">
-                        <label for="Numero" class="form-label">Piso / depto</label>
+                        <label class="indicacion" for="Numero" class="form-label">Piso / depto</label>
                         <input type="text" class="form-control" id="inputAddress2" placeholder="Ingrese su piso / dpto">
                     </div>
                     <div class="col-md-4">
-                        <label for="Provincia" class="form-label">Provincia</label>
+                        <label class="indicacion" for="Provincia" class="form-label">Provincia</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su provincia">
                     </div>
                     <div class="col-12">
@@ -112,27 +106,21 @@
                     </div>
                 </form>
             </div>
-            <div class="rusa">
-                <img src="../imagenes/junketbell.jpg" alt="Pesa rusa">
-            </div>
         </article>
     </section>
     </header>
     <footer class="fin">
+        <div class="finfooter">
+            <a target="_blank" href="https://instagram.com/laolabox?        igshid=NTdlMDg3MTY=" target="_blank"><img
+                    class="redes" src="../imagenes/instagram.png" alt="logo     de red social instagram"></a>
+            <a target="_blank" href="
+                https://wa.me/+541168867670?        text=Hola%20soy%20Kevin%20Ricon%20coach%20de%20la%20Ola%20Box!%20En%20que%20puedo%20ayudarte..  .
+                "> <img class="redes" src="../imagenes/whatsapp-removebg-preview (1).png" alt="logo de whatsapp"></a>
             <p class="copyright">En La Ola cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable
                 al momento de
                 iniciar una actividad física (leyes nº 139 y 12329).
                 Copyright (c) 2022 LAOLABOX. Todos los derechos reservados.</p>
-                <div class="finfooter">
-                    <a target="_blank" href="https://instagram.com/laolabox?        igshid=NTdlMDg3MTY=" target="_blank"><img class="redes" src="../imagenes/instagram.png" alt="logo     de red social instagram"></a>
-                    <a target="_blank" href="
-                            https://wa.me/+541168867670?        text=Hola%20soy%20Kevin%20Ricon%20coach%20de%20la%20Ola%20Box!%20En%20que%20puedo%20ayudarte..  .
-                            "> <img class="redes" src="../imagenes/whatsapp.png" alt="logo de whatsapp"></a>
-                    <iframe class="redes"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.5486267667693!2d-58.5323500851985!3d-34.514325760279775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1d9ab0f4d53%3A0x744a14d260040328!2sLa%20Ola%20Box!5e0!3m2!1ses!2sar!4v1677973135924!5m2!1ses!2sar"
-                        width="40" height="40" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+        </div>
         <a href="../index.html">Volver al inicio.</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

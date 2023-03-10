@@ -1,0 +1,56 @@
+/*HEADER*/
+
+.encabezado {
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    @media (min-width: 768px) {
+        .encabezado {
+            display: flex;
+        }
+    }
+
+
+    .logo {
+        margin: 5px;
+        width: 200px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+        div {
+            .navbar-toggler {
+                background-color: rgb(0, 132, 255);
+            }
+
+            div {
+                ul {
+                    li {
+                        width: 120px;
+                        text-align: center;
+                        color: white;
+                        background-color: orange;
+                        border: solid;
+                        border-color: orange;
+                        border-radius: 3px;
+                        margin: 15px;
+                        padding: 3px;
+                        border: 3px;
+                        border-style: double;
+
+                        .icono {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

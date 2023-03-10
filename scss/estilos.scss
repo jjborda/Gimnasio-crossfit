@@ -1,0 +1,49 @@
+@use './partials/reset';
+
+@use './partials/header';
+
+@use './partials/seccionIndex';
+
+@use './partials/seccionActividades';
+
+@use './partials/seccionHorarios';
+
+@use './partials/seccionFormulario';
+
+@use './partials/footer';
+
+
+
+
+
+
+footer {
+
+    grid-area: "footer";
+
+    .finfooter {
+        flex-direction: colum;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        .redes {
+            margin: 30px;
+            width: 40px;
+
+            &:hover {
+                margin: 20px;
+                width: 50px;
+            }
+
+        }
+
+        .copyright {
+            color: orange;
+            text-align: end;
+            font-size: 12px;
+            margin: 20px;
+        }
+
+    }
+
+}

@@ -1,0 +1,28 @@
+/*Horarios*/
+
+.seccion-horarios {
+    grid-area: seccion;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    .horario {
+        h1 {}
+
+        div {
+            display: flex;
+            justify-content: space-around;
+
+            .img-hora {
+                width: 500px;
+                margin: 30px;
+
+            }
+
+            .detalle {
+                text-align: start;
+                color: orange;
+            }
+        }
+    }
+}

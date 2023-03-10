@@ -1,404 +1,214 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-/*HEADER gral*/
+section {
+  background-image: url(../imagenes/playa11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+}
 
+/*HEADER*/
 .encabezado {
-    grid-area: header;
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  grid-area: header;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-
-.navbar-brand {
-    background-color: orange;
-}
-
-.navbar-toggler {
-    background-color: rgb(0, 132, 255);
-}
-
-.navegador {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.navegador li {
-    width: 120px;
-    text-align: center;
-    color: white;
-    background-color: orange;
-    border: solid;
-    border-color: orange;
-    border-radius: 3px;
-    margin: 15px;
-    padding: 3px;
-    border: 3px;
-    border-style: double;
-}
-
-.navegador li:hover {
-    background-color: white;
-}
-
-.hamburguesa li {
-    color: white;
-    background-color: orange;
-    border: solid;
-    border-color: orange;
-    border-radius: 3px;
-    margin: 15px;
-    padding: 3px;
-    border: 3px;
-    border-style: double;
-}
-
-.encabezado img {
-    margin: 5px;
-    width: 200px;
-}
-
-
-/*SECCION PRINCIPAL (index)*/
-.seccion {
-    grid-area: seccion;
-    width: 95%;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-}
-
-.seccion ul li {
-    margin: 30px;
-}
-
-.seccion ul img {
-    width: 400px;
-    height: 200px;
-}
-
-h1 {
-    color: white;
-    text-align: start;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 60px;
-    margin: 80px;
-}
-
-h2 {
-    text-align: center;
-    margin: 30px;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.frente img {
-    width: 95%;
-    height: 200px;
-    margin: 10px;
-}
-
-p {
-    text-align: center;
-    width: 95%;
-    padding: 30px;
-    font-size: 20px;
-    font-style: oblique;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-
-/*FOOTER gral*/
-
-.finfooter {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-}
-
-.ins {
-    width: 5px;
-}
-
-.whats {
-    width: 5px;
-}
-
-.redes {
-    margin: 30px;
-    width: 40px;
-}
-
-.redes:hover {
-    margin: 20px;
-    width: 50px;
-}
-
-.copyright {
-    text-align: start;
-    font-size: 15px;
-}
-
-.pre-fin {
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-}
-.fin{
-    grid-area: "footer";
-}
-
-
-/* ACTIVIDADES*/
-.seccion-actividades{
-    grid-area: seccion;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-.lista-actividad {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.act-cont a img{
-    margin: 0;
-    width: 400px;
-    height: 200px;
-}
-.seccion p {
-    width: 90%;
-    padding: 30px;
-    font-size: 1rem;
-    font-style: oblique;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/*HORARIOS*/
-.logo {
-    margin: 5px;
-    width: 200px;
-}
-
-.img-hora {
-    width: 90%;
-    margin: 30px;
-
-}
-
-.horario {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-.rusa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-}
-
-.rusa img {
-    width: 90%;
-}
-
-.grid-contenedor {
-    display: grid;
-    gap: 10px;
-    grid-template-areas:
-        "header"
-        "seccion"
-        "footer";
-}
-
-.menu ul {
-    display: none;
-}
-
-/*FORMULARIOS*/
-
-.formulario {
-    margin: 5px;
-}
-
-/*NOSOTROS*/
-.profes {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.card {
-    display: flex;
-    margin: 10px;
-    border: solid rgb(0, 132, 255);
-}
-
-.card img {
-    width: auto;
-    height: 380px;
-}
-
-.card-body {
-    background-color: rgb(0, 132, 255);
-}
-
-.card-title {
-    color: orangered;
-}
-
-.card-body ul {
-
-    color: orangered;
-}
-
-/*TABLET*/
 @media (min-width: 768px) {
-    .encabezado {
-        display: flex;
-        margin: 15px;
-    }
-
-    /*MENU DE NAVEGACION*/
-    .menu {
-        grid-area: menu;
-        background-color: white;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-    }
-
-    .menu li {
-        color: white;
-        background-color: orange;
-        border: solid;
-        border-color: orange;
-        border-radius: 3px;
-        margin: 15px;
-        padding: 3px;
-        border: 3px;
-        border-style: double;
-    }
-
-    .menu li:hover {
-        background-color: white;
-    }
-
-    .navegador {
-        display: none;
-    }
-
-    /*ACTIVIDAD*/
-    .lista-actividad {
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: start;
-    }
-    .act-cont{
-        display: flex;
-    }
-    p {
-        font-size: 15px;
-    }
-
-    .seccion p {
-        display: flex;
-        text-align: start;
-    }
-
-    .fin {
-        flex-direction: column;
-    }
-
-
-
-    .img-hora {
-        margin: 10px;
-    }
-
-    .detalle {
-        display: inline-flex;
-    }
-
-    /*HORARIO*/
-    .fin {
-        grid-area: footer;
-        background-color: white;
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-    }
-
-    .grid-contenedor {
-        grid-template-areas:
-            "header  header"
-            "menu menu"
-            "seccion seccion"
-            "footer  footer";
-    }
-
+  .encabezado .encabezado {
+    display: flex;
+  }
+}
+.encabezado .logo {
+  margin: 5px;
+  width: 200px;
+}
+.encabezado nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.encabezado nav div .navbar-toggler {
+  background-color: rgb(0, 132, 255);
+}
+.encabezado nav div div ul li {
+  width: 120px;
+  text-align: center;
+  color: white;
+  background-color: orange;
+  border: solid;
+  border-color: orange;
+  border-radius: 3px;
+  margin: 15px;
+  padding: 3px;
+  border: 3px;
+  border-style: double;
+}
+.encabezado nav div div ul li .icono {
+  width: 20px;
 }
 
-/*DESKTOP (INDEX)*/
-@media (min-width: 1200px) {
-
-    .seccion {
-        flex-direction: row;
-    }
-
-    .frente {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    /*ACTIVIDAD*/
-    .lista-actividad {
-        justify-content: space-around;
-    }
-
-    .lista-actividad p {
-        font-size: 15px;
-    }
-
-
-    /*HORARIO*/
-    .img-hora {
-        margin: 10px;
-    }
-
-    .detalle {
-        display: inline-flex;
-    }
-
-    .grid-contenedor {
-        grid-template-areas:
-            "header  header header"
-            "menu menu menu"
-            "seccion seccion seccion"
-            "footer  footer footer";
-    }
+/*SECCION INDEX*/
+.seccion {
+  grid-area: seccion;
+  display: flex;
+  flex-direction: column;
 }
+.seccion article h1 {
+  text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  margin: 10px;
+}
+.seccion article h2 {
+  color: white;
+  margin: 5px;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.seccion article div p {
+  color: white;
+  text-align: center;
+  width: 95%;
+  padding: 30px;
+  font-size: 20px;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.seccion article div div {
+  display: flex;
+  margin: 10px;
+}
+.seccion article div div iframe {
+  width: 400px;
+  height: 200px;
+}
+
+/*SECCION ACTIVIDADES*/
+.seccion-actividades {
+  grid-area: seccion;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.seccion-actividades article h1 {
+  color: white;
+}
+.seccion-actividades article nav ul .lista-actividad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .seccion-actividades article nav ul .lista-actividad {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    margin: 15px;
+    padding: 3px;
+  }
+}
+.seccion-actividades article nav ul .lista-actividad .act-cont a img {
+  margin: 0;
+  width: 400px;
+  height: 200px;
+}
+.seccion-actividades article nav ul .lista-actividad .act-cont p {
+  width: 90%;
+  padding: 30px;
+  font-size: 1rem;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+@media (min-width: 768px) {
+  .seccion-actividades article nav ul .lista-actividad .act-cont p {
+    font-size: 1.3rem;
+    display: flex;
+    text-align: start;
+    color: orange;
+  }
+}
+.seccion-actividades article nav ul .lista-actividad .act-cont .parrafo {
+  color: white;
+}
+@media (min-width: 768px) {
+  .seccion-actividades article nav ul .lista-actividad .act-cont .parrafo {
+    font-size: 1.3rem;
+    color: orange;
+  }
+}
+@media (min-width: 768px) {
+  .seccion-actividades article nav ul .lista-actividad .act-cont {
+    display: flex;
+  }
+}
+
+/*Horarios*/
+.seccion-horarios {
+  grid-area: seccion;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.seccion-horarios .horario div {
+  display: flex;
+  justify-content: space-around;
+}
+.seccion-horarios .horario div .img-hora {
+  width: 500px;
+  margin: 30px;
+}
+.seccion-horarios .horario div .detalle {
+  text-align: start;
+  color: orange;
+}
+
+/*FORMULARIO*/
+.seccion-formulario {
+  grid-area: seccion;
+  width: 95%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}
+.seccion-formulario h1 {
+  color: white;
+}
+.seccion-formulario .formulario {
+  margin: 5px;
+}
+.seccion-formulario .formulario div .indicacion {
+  font-size: 1rem;
+  color: orange;
+}
+
+footer {
+  grid-area: "footer";
+}
+footer .finfooter {
+  flex-direction: colum;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+footer .finfooter .redes {
+  margin: 30px;
+  width: 40px;
+}
+footer .finfooter .redes:hover {
+  margin: 20px;
+  width: 50px;
+}
+footer .finfooter .copyright {
+  color: orange;
+  text-align: end;
+  font-size: 12px;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
