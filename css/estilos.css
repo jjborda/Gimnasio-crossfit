@@ -64,12 +64,14 @@ section {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 3rem;
   margin: 10px;
+  text-shadow: 2px 2px black;
 }
 .seccion article h2 {
   color: white;
   margin: 5px;
   font-size: 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 2px 2px black;
 }
 .seccion article div p {
   color: white;
@@ -79,9 +81,17 @@ section {
   font-size: 20px;
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px black;
+}
+@media (min-width: 768px) {
+  .seccion article div p {
+    color: orange;
+    text-shadow: 2px 2px black;
+  }
 }
 .seccion article div div {
   display: flex;
+  justify-content: center;
   margin: 10px;
 }
 .seccion article div div iframe {
@@ -125,6 +135,7 @@ section {
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  text-shadow: 2px 2px black;
 }
 @media (min-width: 768px) {
   .seccion-actividades article nav ul .lista-actividad .act-cont p {
@@ -132,6 +143,7 @@ section {
     display: flex;
     text-align: start;
     color: orange;
+    text-shadow: 2px 2px white;
   }
 }
 .seccion-actividades article nav ul .lista-actividad .act-cont .parrafo {
@@ -166,7 +178,8 @@ section {
 }
 .seccion-horarios .horario div .detalle {
   text-align: start;
-  color: orange;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 /*FORMULARIO*/
@@ -185,7 +198,53 @@ section {
 }
 .seccion-formulario .formulario div .indicacion {
   font-size: 1rem;
-  color: orange;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/*NOSOTROS*/
+.seccion-nosotros h1 {
+  color: white;
+  text-align: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+}
+.seccion-nosotros h2 {
+  color: white;
+  text-align: center;
+  margin: 30px;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 2px 2px black;
+}
+.seccion-nosotros div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  .seccion-nosotros div {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.seccion-nosotros div .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.seccion-nosotros div img {
+  width: 286px;
+  height: 380px;
 }
 
 footer {

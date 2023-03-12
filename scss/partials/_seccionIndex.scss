@@ -12,6 +12,7 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 3rem;
             margin: 10px;
+            text-shadow: 2px 2px black;
         }
 
         h2 {
@@ -19,6 +20,7 @@
             margin: 5px;
             font-size: 2rem;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 2px 2px black;
         }
 
         div {
@@ -30,17 +32,25 @@
                 font-size: 20px;
                 font-style: oblique;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-shadow: 2px 2px black;
 
+                @media (min-width: 768px) {;
+                    color: orange;
+                    text-shadow: 2px 2px black;
+
+                }
             }
 
             div {
                 display: flex;
+                justify-content: center;
                 margin: 10px;
-                iframe{
+
+                iframe {
                     width: 400px;
                     height: 200px;
                 }
-                }
+            }
         }
     }
 }

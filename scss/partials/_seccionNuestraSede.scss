@@ -1,0 +1,54 @@
+/*NOSOTROS*/
+
+.seccion-nosotros {
+    h1 {
+        color: white;
+        text-align: start;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 60px;
+        text-shadow: 2px 2px black;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin: 30px;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: 2px 2px black;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin: 10px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin: 10px;
+
+        }
+
+        img {
+            width: 286px;
+            height: 380px;
+        }
+    }
+}
+
+
+
+

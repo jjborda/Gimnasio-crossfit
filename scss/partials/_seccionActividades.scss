@@ -46,6 +46,7 @@
                             font-style: oblique;
                             font-family: Verdana, Geneva, Tahoma, sans-serif;
                             color: white;
+                            text-shadow: 2px 2px black;
 
                             @media (min-width: 768px) {
 
@@ -53,6 +54,7 @@
                                 display: flex;
                                 text-align: start;
                                 color: orange;
+                                text-shadow: 2px 2px white
                             }
 
                         }
