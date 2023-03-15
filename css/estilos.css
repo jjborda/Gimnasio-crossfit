@@ -7,7 +7,8 @@ section {
   background-image: url(../imagenes/playa11.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: auto;
+  width: 100%;
+  height: 100%;
 }
 
 /*HEADER*/
@@ -52,11 +53,12 @@ section {
   width: 20px;
 }
 
-/*SECCION INDEX*/
 .seccion {
   grid-area: seccion;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 .seccion article h1 {
   text-align: center;
@@ -74,6 +76,7 @@ section {
   text-shadow: 2px 2px black;
 }
 .seccion article div p {
+  background-color: orange;
   color: white;
   text-align: center;
   width: 95%;
@@ -85,7 +88,7 @@ section {
 }
 @media (min-width: 768px) {
   .seccion article div p {
-    color: orange;
+    color: white;
     text-shadow: 2px 2px black;
   }
 }
@@ -105,6 +108,8 @@ section {
   display: flex;
   flex-direction: column;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 .seccion-actividades article h1 {
   color: white;
@@ -123,14 +128,22 @@ section {
     padding: 3px;
   }
 }
+@media (min-width: 768px) {
+  .seccion-actividades article nav ul .lista-actividad .act-cont:hover {
+    transform: scale(1.05, 1.05);
+    transition: 1s;
+  }
+}
 .seccion-actividades article nav ul .lista-actividad .act-cont a img {
+  margin: 0;
+  height: 200px;
+  width: 400px;
+}
+.seccion-actividades article nav ul .lista-actividad .act-cont p {
+  background-color: orange;
   margin: 0;
   width: 400px;
   height: 200px;
-}
-.seccion-actividades article nav ul .lista-actividad .act-cont p {
-  width: 90%;
-  padding: 30px;
   font-size: 1rem;
   font-style: oblique;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -139,11 +152,12 @@ section {
 }
 @media (min-width: 768px) {
   .seccion-actividades article nav ul .lista-actividad .act-cont p {
+    width: 90%;
     font-size: 1.3rem;
     display: flex;
     text-align: start;
-    color: orange;
-    text-shadow: 2px 2px white;
+    color: white;
+    text-shadow: 2px 2px black;
   }
 }
 .seccion-actividades article nav ul .lista-actividad .act-cont .parrafo {
@@ -152,7 +166,8 @@ section {
 @media (min-width: 768px) {
   .seccion-actividades article nav ul .lista-actividad .act-cont .parrafo {
     font-size: 1.3rem;
-    color: orange;
+    color: white;
+    text-shadow: 2px 2px black;
   }
 }
 @media (min-width: 768px) {
@@ -167,6 +182,8 @@ section {
   display: flex;
   flex-direction: column;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 .seccion-horarios .horario div {
   display: flex;
@@ -185,7 +202,8 @@ section {
 /*FORMULARIO*/
 .seccion-formulario {
   grid-area: seccion;
-  width: 95%;
+  width: 100%;
+  height: 100%;
   background-color: orange;
   display: flex;
   flex-direction: column;
@@ -203,6 +221,10 @@ section {
 }
 
 /*NOSOTROS*/
+.seccion-nosotros {
+  width: 100%;
+  height: 100%;
+}
 .seccion-nosotros h1 {
   color: white;
   text-align: start;
@@ -242,9 +264,15 @@ section {
   gap: 10px;
   margin: 10px;
 }
+@media (min-width: 768px) {
+  .seccion-nosotros div .card:hover {
+    transform: scale(1.05, 1.05);
+    transition: 1s;
+  }
+}
 .seccion-nosotros div img {
-  width: 286px;
   height: 380px;
+  width: 286px;
 }
 
 footer {
@@ -258,10 +286,65 @@ footer .finfooter {
 footer .finfooter .redes {
   margin: 30px;
   width: 40px;
+  transform: scale(1.05, 1.05);
+  -webkit-animation: wobble-hor-bottom 3s infinite;
+  animation: wobble-hor-bottom 3s infinite;
 }
-footer .finfooter .redes:hover {
-  margin: 20px;
-  width: 50px;
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
 footer .finfooter .copyright {
   color: orange;

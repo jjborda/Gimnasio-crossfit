@@ -1,8 +1,10 @@
+@use './variables';
 /*FORMULARIO*/
 
 .seccion-formulario {
     grid-area: seccion;
-    width: 95%;
+    width: 100%;
+    height: 100%;
     background-color: orange;
     display: flex;
     flex-direction: column;

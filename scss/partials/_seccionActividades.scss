@@ -1,3 +1,4 @@
+@use './variables';
 
 
 /*SECCION ACTIVIDADES*/
@@ -7,6 +8,8 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    width: 100%;
+    height: 100%;
 
     article {
         h1 {
@@ -30,18 +33,26 @@
                     }
 
                     .act-cont {
-
+                        @media (min-width: 768px) {
+                            &:hover {
+                                transform: scale(1.05, 1.05);
+                                transition: 1s;
+                            }
+                        }
                         a {
                             img {
                                 margin: 0;
-                                width: 400px;
-                                height: 200px;
+                                @include variables.medidas(200px, 400px);
+                                
+
                             }
                         }
 
                         p {
-                            width: 90%;
-                            padding: 30px;
+                            background-color: variables.$estilos-p;
+                            margin: 0;
+                            width: 400px;
+                            height: 200px;
                             font-size: 1rem;
                             font-style: oblique;
                             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -49,12 +60,12 @@
                             text-shadow: 2px 2px black;
 
                             @media (min-width: 768px) {
-
+                                width: 90%;
                                 font-size: 1.3rem;
                                 display: flex;
                                 text-align: start;
-                                color: orange;
-                                text-shadow: 2px 2px white
+                                color: white;
+                                text-shadow: 2px 2px black
                             }
 
                         }
@@ -64,9 +75,11 @@
 
                             @media (min-width: 768px) {
                                 font-size: 1.3rem;
-                                color: orange;
+                                color: white;
+                                text-shadow: 2px 2px black
                             }
                         }
+
                         @media (min-width: 768px) {
                             display: flex;
 

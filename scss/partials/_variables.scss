@@ -1,0 +1,10 @@
+$estilos-p: orange;
+
+@mixin medidas ($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+@mixin med-nosotros ($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
