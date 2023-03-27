@@ -39,16 +39,24 @@
                                 transition: 1s;
                             }
                         }
+
                         a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
                             img {
-                                margin: 0;
+
                                 @include variables.medidas(200px, 400px);
-                                
+
 
                             }
                         }
 
                         p {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             background-color: variables.$estilos-p;
                             margin: 0;
                             width: 400px;

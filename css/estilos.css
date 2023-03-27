@@ -7,8 +7,6 @@ section {
   background-image: url(../imagenes/playa11.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
 }
 
 /*HEADER*/
@@ -17,6 +15,7 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .encabezado .encabezado {
@@ -25,7 +24,7 @@ section {
 }
 .encabezado .logo {
   margin: 5px;
-  width: 200px;
+  width: 100px;
 }
 .encabezado nav {
   display: flex;
@@ -34,7 +33,7 @@ section {
   align-content: center;
 }
 .encabezado nav div .navbar-toggler {
-  background-color: rgb(0, 132, 255);
+  background-color: rgb(0, 140, 255);
 }
 .encabezado nav div div ul li {
   width: 120px;
@@ -57,8 +56,6 @@ section {
   grid-area: seccion;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
 }
 .seccion article h1 {
   text-align: center;
@@ -134,12 +131,19 @@ section {
     transition: 1s;
   }
 }
+.seccion-actividades article nav ul .lista-actividad .act-cont a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .seccion-actividades article nav ul .lista-actividad .act-cont a img {
-  margin: 0;
   height: 200px;
   width: 400px;
 }
 .seccion-actividades article nav ul .lista-actividad .act-cont p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: orange;
   margin: 0;
   width: 400px;
@@ -182,8 +186,6 @@ section {
   display: flex;
   flex-direction: column;
   margin: 0;
-  width: 100%;
-  height: 100%;
 }
 .seccion-horarios .horario div {
   display: flex;
@@ -212,7 +214,7 @@ section {
   color: white;
 }
 .seccion-formulario .formulario {
-  margin: 5px;
+  margin: 0;
 }
 .seccion-formulario .formulario div .indicacion {
   font-size: 1rem;
@@ -222,8 +224,10 @@ section {
 
 /*NOSOTROS*/
 .seccion-nosotros {
-  width: 100%;
-  height: 100%;
+  grid-area: seccion;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 .seccion-nosotros h1 {
   color: white;
@@ -244,10 +248,11 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin: 0;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .seccion-nosotros div {
@@ -258,21 +263,37 @@ section {
 .seccion-nosotros div .card {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  margin: 10px;
+  width: 13rem;
+  margin: 8px;
 }
 @media (min-width: 768px) {
+  .seccion-nosotros div .card {
+    flex-direction: column;
+    width: 15rem;
+  }
   .seccion-nosotros div .card:hover {
     transform: scale(1.05, 1.05);
     transition: 1s;
   }
 }
 .seccion-nosotros div img {
-  height: 380px;
-  width: 286px;
+  width: 13rem;
+}
+@media (min-width: 768px) {
+  .seccion-nosotros div img {
+    height: 300px;
+    width: 240px;
+  }
+}
+.seccion-nosotros div .card-body {
+  width: 13rem;
+}
+.seccion-nosotros div .card-body p {
+  font-size: 1rem;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
