@@ -58,11 +58,10 @@ section {
   flex-direction: column;
 }
 .seccion article h1 {
-  text-align: center;
   color: white;
+  text-align: start;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 3rem;
-  margin: 10px;
+  font-size: 60px;
   text-shadow: 2px 2px black;
 }
 .seccion article h2 {
@@ -110,6 +109,10 @@ section {
 }
 .seccion-actividades article h1 {
   color: white;
+  text-align: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
 }
 .seccion-actividades article nav ul .lista-actividad {
   display: flex;
@@ -189,6 +192,10 @@ section {
 }
 .seccion-horarios .horario h1 {
   color: white;
+  text-align: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
 }
 .seccion-horarios .horario div {
   display: flex;
@@ -215,6 +222,10 @@ section {
 }
 .seccion-formulario h1 {
   color: white;
+  text-align: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
 }
 .seccion-formulario .formulario {
   margin: 0;
